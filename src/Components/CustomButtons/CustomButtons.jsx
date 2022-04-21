@@ -5,26 +5,37 @@ import "./CustomButtons.css"
 
 const CustomButtons = (props) => {
 
-    const [buttonClass, setButtonClass] = useState("inactive");
+    const [likeButton, setLikeButton] = useState("inactive");
 
     function handClick(){
-        if(buttonClass === "inactive"){
-            setButtonClass("active")
+        if(likeButton === "inactive"){
+            setLikeButton("active")
         }
         else {
-            setButtonClass("inactive")
+            setLikeButton("inactive")
         }
 
     }
 
+    const [dislikeButton, setDislikeButton] = useState("inactive");
+
+    function dislikeHandClick(){
+        if(dislikeButton === "inactive"){
+            setDislikeButton("active")
+        }
+        else {
+            setDislikeButton("inactive")
+        }
+
+    }
 
     return ( 
         <div>
             <div>
-                <button className = {buttonClass} type="button" onClick= {handClick}>{props.message}</button>
+                <button className = {likeButton} type="button" onClick= {handClick}>{props.message}</button>
             </div>
             <div>
-            <button className = {buttonClass} type="button" onClick= {handClick}>Dislike</button>
+                <button className = {dislikeButton} type="button" onClick= {dislikeHandClick}>Dislike</button>
             </div>
         </div>
     
