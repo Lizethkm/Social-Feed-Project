@@ -1,20 +1,30 @@
 import React, { useState } from 'react';
 import Posts from './Components/PostFolder/Posts';
 import CustomButtons from './Components/CustomButtons/CustomButtons';
+import DisplayPosts from './Components/DisplayPosts/DisplayPosts';
+import CreatePost from './Components/CreatePost/CreatePost';
 
 
 
 function App() {
 
-  const [entries, setEntries] = useState([{name: 'Unique', post:"I'm thinking"}])
+  const [postsEntries, setPostsEntries] = useState([{name: 'Unique', post:"I'm thinking"}])
+
+  function addNewPostEntry(postEntry){
+    let tempPostsEntry = [...postsEntries, postEntry ];
+    setPostsEntries(tempPostsEntry);
+  }
 
 
   return (
     <div>
       <h2>Social Feed</h2>
       <div>
+        <CreatePost addNewPostEntry={addNewPostEntry}/>
         <Posts/>
         <CustomButtons message= "Like" />
+        <DisplayPosts />
+        
       </div>
     </div>
   );

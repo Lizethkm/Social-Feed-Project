@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Posts from "../PostFolder/Posts";
 
 
 
@@ -6,7 +7,9 @@ import { useState } from "react";
 
 const DisplayPosts = (props) => {
     return (
-        <div>hey</div>
+        <div>
+
+        </div>
     );
 }
  
