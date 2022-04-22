@@ -7,17 +7,17 @@ const DisplayPosts = (props) => {
 
     return (
        
-        <form className= "form-grid">
+        <div className= "container">
                 {props.parentPostsEntries.map((postEntry) => {
                     return (
-                    <div>
+                    <div className="display">
                         <div>{postEntry.name}</div>
                         <div>{postEntry.posts}</div>
                         <div><CustomButtons/></div>
                     </div>
                     )
                 })}
-        </form>
+        </div>
 
 
 

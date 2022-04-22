@@ -19,11 +19,10 @@ function App() {
   return (
     <div>
       <h2>Social Feed</h2>
-      <div>
-      
-        <CreatePost addNewPostEntry={addNewPostEntry}/>
-        <Posts/>
-        <DisplayPosts parentPostsEntries= {postsEntries}/>
+      <div className='app'>
+        <div><CreatePost addNewPostEntry={addNewPostEntry}/></div>
+        <div><Posts/></div>
+        <div><DisplayPosts parentPostsEntries= {postsEntries}/></div>
         
       </div>
     </div>

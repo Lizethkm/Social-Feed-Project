@@ -33,7 +33,7 @@ const CustomButtons = (props) => {
     }
 
     return ( 
-        <div className='container'>
+        <div className='buttons'>
             <div className="leftButton">
                 <button className ={likeButton} type="button" onClick= {handleClick}>Like</button>
             </div>

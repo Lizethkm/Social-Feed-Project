@@ -18,16 +18,16 @@ const CreatePost = (props) => {
 
 
     return ( 
-        <form  onSubmit= {handleCreate} className= "form-grid">
-            <div className="form-group">
+        <form  className="createPosts" onSubmit= {handleCreate} >
+            <div className="form">
             <label>Name</label>
-                <input type='text' className="form-control" value={name} onChange= {(event) => setName(event.target.value)} placeholder="What do they call you?"></input>
+                <input type='text' value={name} onChange= {(event) => setName(event.target.value)} placeholder="What do they call you?"></input>
             </div>
-            <div className="form-group">
+            <div className="form">
                 <label>Post</label>
-                <textarea name="Post"  className="form-control" value={posts} onChange= {(event) => setPosts(event.target.value)} placeholder = "What's on your mind?"></textarea>
+                <textarea name="Post" value={posts} onChange= {(event) => setPosts(event.target.value)} placeholder = "What's on your mind?"></textarea>
             </div>
-            <button type="submit" className="btn btn-priamry">Create</button>
+            <button type="submit" >Create</button>
         </form>
      );
 }
