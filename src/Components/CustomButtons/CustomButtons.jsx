@@ -7,7 +7,7 @@ const CustomButtons = (props) => {
 
     const [likeButton, setLikeButton] = useState("inactive");
 
-    function handClick(){
+    function handleClick(){
         if(likeButton === "inactive"){
             setLikeButton("active");
             setDislikeButton("inactive")
@@ -21,7 +21,7 @@ const CustomButtons = (props) => {
 
     const [dislikeButton, setDislikeButton] = useState("inactive");
 
-    function dislikeHandClick(){
+    function dislikeHandleClick(){
         if(dislikeButton === "inactive"){
             setDislikeButton("active");
             setLikeButton("inactive")
@@ -35,10 +35,10 @@ const CustomButtons = (props) => {
     return ( 
         <div className='container'>
             <div className="leftButton">
-                <button className ={likeButton} type="button" onClick= {handClick}>Like</button>
+                <button className ={likeButton} type="button" onClick= {handleClick}>Like</button>
             </div>
             <div className="rightButton">
-                <button className ={dislikeButton} type="button" onClick= {dislikeHandClick}>Dislike</button>
+                <button className ={dislikeButton} type="button" onClick= {dislikeHandleClick}>Dislike</button>
             </div>
         </div>
     
