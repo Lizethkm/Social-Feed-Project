@@ -23,7 +23,6 @@ function App() {
       
         <CreatePost addNewPostEntry={addNewPostEntry}/>
         <Posts/>
-        <CustomButtons buttons={CustomButtons}/>
         <DisplayPosts parentPostsEntries= {postsEntries}/>
         
       </div>

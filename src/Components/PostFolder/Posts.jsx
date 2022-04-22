@@ -11,6 +11,7 @@ const Posts = (props) => {
                 <label>Name:</label>
                 <p>Mango</p>
                 <p>Sorry for being late... I was enjoying my last few seconds of not being here</p>
+                <CustomButtons className= "buttons"/>
             </div>
         </form>
       );

@@ -9,7 +9,8 @@ const CustomButtons = (props) => {
 
     function handClick(){
         if(likeButton === "inactive"){
-            setLikeButton("active")
+            setLikeButton("active");
+            setDislikeButton("inactive")
         }
         else {
             setLikeButton("inactive")
@@ -17,13 +18,13 @@ const CustomButtons = (props) => {
 
     }
 
-    // Create Conditional for buttons if one is active keep the other inactive
 
     const [dislikeButton, setDislikeButton] = useState("inactive");
 
     function dislikeHandClick(){
         if(dislikeButton === "inactive"){
-            setDislikeButton("active")
+            setDislikeButton("active");
+            setLikeButton("inactive")
         }
         else {
             setDislikeButton("inactive")
@@ -32,12 +33,12 @@ const CustomButtons = (props) => {
     }
 
     return ( 
-        <div>
-            <div>
-                <button class= "btn-grp btn-primary" className =  {likeButton} type="button" onClick= {handClick}>Like</button>
+        <div className='container'>
+            <div className="leftButton">
+                <button className ={likeButton} type="button" onClick= {handClick}>Like</button>
             </div>
-            <div>
-                <button class= "btn-grp btn-secondary" className = {dislikeButton} type="button" onClick= {dislikeHandClick}>Dislike</button>
+            <div className="rightButton">
+                <button className ={dislikeButton} type="button" onClick= {dislikeHandClick}>Dislike</button>
             </div>
         </div>
     

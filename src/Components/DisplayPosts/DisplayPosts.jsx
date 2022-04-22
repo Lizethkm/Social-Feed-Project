@@ -8,19 +8,15 @@ const DisplayPosts = (props) => {
     return (
        
         <form className= "form-grid">
-            <table>
-                <tbody>
                 {props.parentPostsEntries.map((postEntry) => {
                     return (
-                    <tr>
-                        <td>{postEntry.name}</td>
-                        <td>{postEntry.posts}</td>
-                        <td><CustomButtons/></td>
-                    </tr>
+                    <div>
+                        <div>{postEntry.name}</div>
+                        <div>{postEntry.posts}</div>
+                        <div><CustomButtons/></div>
+                    </div>
                     )
                 })}
-                </tbody>
-            </table>
         </form>
 
 
