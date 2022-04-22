@@ -1,5 +1,11 @@
-app{
+.container{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+
+}
+
+.body{
+    background-color: rgb(216, 125, 255);
+    display: flex;
     justify-content: center;
 }

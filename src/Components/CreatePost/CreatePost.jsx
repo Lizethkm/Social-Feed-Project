@@ -18,8 +18,8 @@ const CreatePost = (props) => {
 
 
     return ( 
-        <form  className="createPosts" onSubmit= {handleCreate} >
-            <div className="form">
+        <form onSubmit= {handleCreate} className="form-grid" >
+            <div className="form-group">
             <label>Name</label>
                 <input type='text' value={name} onChange= {(event) => setName(event.target.value)} placeholder="What do they call you?"></input>
             </div>

@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import Posts from './Components/PostFolder/Posts';
-import CustomButtons from './Components/CustomButtons/CustomButtons';
 import DisplayPosts from './Components/DisplayPosts/DisplayPosts';
 import CreatePost from './Components/CreatePost/CreatePost';
-
 
 
 function App() {
@@ -19,12 +17,14 @@ function App() {
   return (
     <div>
       <h2>Social Feed</h2>
-      <div className='app'>
-        <div><CreatePost addNewPostEntry={addNewPostEntry}/></div>
-        <div><Posts/></div>
-        <div><DisplayPosts parentPostsEntries= {postsEntries}/></div>
-        
-      </div>
+      <body className='body' >
+        <div className='container'> 
+          <div className='createPost'><CreatePost addNewPostEntry={addNewPostEntry}/></div>
+          <div className='posts'><Posts/></div>
+          <div className='displayPosts'><DisplayPosts parentPostsEntries= {postsEntries}/></div>
+        </div>
+      </body>
+
     </div>
   );
 }
