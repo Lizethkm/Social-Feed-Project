@@ -1,9 +1,4 @@
-// import { useEffect, useState } from "react";
-// import Posts from "../PostFolder/Posts";
-// import CreatePost from "../CreatePost/CreatePost";
-
-
-
+import CustomButtons from "../CustomButtons/CustomButtons";
 
 const DisplayPosts = (props) => {
 
@@ -17,7 +12,6 @@ const DisplayPosts = (props) => {
                 <thead>
                 <tr>
                     <th>Name</th>
-                    <th>Posts</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -25,7 +19,8 @@ const DisplayPosts = (props) => {
                     return (
                     <tr>
                         <td>{postEntry.name}</td>
-                        <td>{postEntry.post}</td>
+                        <td>{postEntry.posts}</td>
+                        <td><CustomButtons/></td>
                     </tr>
                     )
                 })}

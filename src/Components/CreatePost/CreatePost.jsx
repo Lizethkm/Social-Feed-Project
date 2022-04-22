@@ -1,9 +1,6 @@
 import { useState } from "react";
 
 
-
-
-
 const CreatePost = (props) => {
 
     const[name, setName] = useState ('');
@@ -16,7 +13,7 @@ const CreatePost = (props) => {
             posts: posts,
         };
         console.log(newPostEntry);
-        props.addNewPostEntryProperty(newPostEntry)
+        props.addNewPostEntry(newPostEntry)
     }
 
 

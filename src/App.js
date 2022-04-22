@@ -8,10 +8,10 @@ import CreatePost from './Components/CreatePost/CreatePost';
 
 function App() {
 
-  const [postsEntries, setPostsEntries] = useState([{name: 'Unique', post:"I'm thinking"}])
+  const [postsEntries, setPostsEntries] = useState([{name: 'Unique', posts:"I'm thinking"}])
 
-  function addNewPostEntry(postEntry){
-    let tempPostsEntry = [...postsEntries, postEntry ];
+  function addNewPostEntry(newPostEntry){
+    let tempPostsEntry = [newPostEntry, ...postsEntries];
     setPostsEntries(tempPostsEntry);
   }
 
@@ -21,9 +21,9 @@ function App() {
       <h2>Social Feed</h2>
       <div>
       
-        <CreatePost addNewPostEntryProperty={addNewPostEntry}/>
+        <CreatePost addNewPostEntry={addNewPostEntry}/>
         <Posts/>
-        <CustomButtons />
+        <CustomButtons buttons={CustomButtons}/>
         <DisplayPosts parentPostsEntries= {postsEntries}/>
         
       </div>
