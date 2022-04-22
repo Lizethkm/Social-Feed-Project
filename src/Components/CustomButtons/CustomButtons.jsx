@@ -32,7 +32,7 @@ const CustomButtons = (props) => {
     return ( 
         <div>
             <div>
-                <button className = {likeButton} type="button" onClick= {handClick}>{props.message}</button>
+                <button className = {likeButton} type="button" onClick= {handClick}>Like</button>
             </div>
             <div>
                 <button className = {dislikeButton} type="button" onClick= {dislikeHandClick}>Dislike</button>

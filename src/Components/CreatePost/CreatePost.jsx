@@ -32,7 +32,6 @@ const CreatePost = (props) => {
             </div>
             <button type="submit" className="btn btn-priamry">Create</button>
         </form>
-
      );
 }
  

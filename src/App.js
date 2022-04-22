@@ -20,10 +20,11 @@ function App() {
     <div>
       <h2>Social Feed</h2>
       <div>
+      
         <CreatePost addNewPostEntryProperty={addNewPostEntry}/>
         <Posts/>
-        <CustomButtons message= "Like" />
-        <DisplayPosts />
+        <CustomButtons />
+        <DisplayPosts parentPostsEntries= {postsEntries}/>
         
       </div>
     </div>

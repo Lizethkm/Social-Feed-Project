@@ -1,19 +1,17 @@
 
+// this posts are already created so I don't need a form here
 
+import CustomButtons from "../CustomButtons/CustomButtons";
 
 const Posts = (props) => {
 
     return (
         <form>
             <div>
-                <label>Name</label>
-                <input type='text' placeholder="What do they call you?"></input>
+                <label>Name:</label>
+                <p>Mango</p>
+                <p>Sorry for being late... I was enjoying my last few seconds of not being here</p>
             </div>
-            <div>
-                <label>Post</label>
-                <textarea name="Post" placeholder = "What's on your mind?"></textarea>
-            </div>
-
         </form>
       );
 }
