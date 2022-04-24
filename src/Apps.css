@@ -1,11 +1,19 @@
 .container{
+    background-color: rgb(216, 125, 255);
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content:center;
 
 }
 
 .body{
     background-color: rgb(216, 125, 255);
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content:center;
+
 }

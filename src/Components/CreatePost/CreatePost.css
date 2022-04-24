@@ -1,5 +1,8 @@
-/* .createPosts {
+.newPosts {
     display: flex;
-    flex-direction: column;
+    flex-direction: column
+}
+
+.container{
     justify-content: center;
-} */
+}

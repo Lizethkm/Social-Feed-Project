@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Posts from './Components/PostFolder/Posts';
 import DisplayPosts from './Components/DisplayPosts/DisplayPosts';
 import CreatePost from './Components/CreatePost/CreatePost';
+import './Apps.css'
 
 
 function App() {
@@ -15,15 +16,13 @@ function App() {
 
 
   return (
-    <div>
+    <div className='container'>
       <h2>Social Feed</h2>
-      <body className='body' >
-        <div className='container'> 
-          <div className='createPost'><CreatePost addNewPostEntry={addNewPostEntry}/></div>
-          <div className='posts'><Posts/></div>
-          <div className='displayPosts'><DisplayPosts parentPostsEntries= {postsEntries}/></div>
+        <div className='body'> 
+          <CreatePost addNewPostEntry={addNewPostEntry}/>
+          <DisplayPosts parentPostsEntries= {postsEntries}/>
+          <Posts/>
         </div>
-      </body>
 
     </div>
   );

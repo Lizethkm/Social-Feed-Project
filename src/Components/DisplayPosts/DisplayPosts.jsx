@@ -1,4 +1,5 @@
 import CustomButtons from "../CustomButtons/CustomButtons";
+import './DisplayPosts.css'
 
 const DisplayPosts = (props) => {
 
@@ -17,6 +18,9 @@ const DisplayPosts = (props) => {
                     </div>
                     )
                 })}
+            <div>
+                
+            </div>
         </div>
 
 
