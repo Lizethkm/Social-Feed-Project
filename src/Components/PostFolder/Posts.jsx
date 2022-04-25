@@ -7,13 +7,11 @@ const Posts = (props) => {
 
     return (
         <form>
-            <div className="container">
-                <div>Mango</div>
-                <div>Sorry for being late... I was enjoying my last few seconds of not being here</div>
-                
-            </div>
-
-            <CustomButtons />
+            <div>
+                <div className="name">Mango</div>
+                <div className="posts">Sorry for being late... I was enjoying my last few seconds of not being here</div>
+                <CustomButtons />
+            </div>   
         </form>
       );
 }

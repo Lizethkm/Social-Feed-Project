@@ -1,6 +1,5 @@
-.buttons{
-    display: flex;
-    justify-content: center;
+button{
+    float: right;
 }
 
 .leftButton{

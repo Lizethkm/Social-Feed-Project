@@ -1,4 +1,5 @@
 import CustomButtons from "../CustomButtons/CustomButtons";
+import Posts from "../PostFolder/Posts";
 import './DisplayPosts.css'
 
 const DisplayPosts = (props) => {
@@ -8,18 +9,20 @@ const DisplayPosts = (props) => {
 
     return (
        
-        <div className= "container">
+        <div>
                 {props.parentPostsEntries.map((postEntry) => {
                     return (
-                    <div className="display">
-                        <div>{postEntry.name}</div>
-                        <div>{postEntry.posts}</div>
+                    <div>
+                        <div className="name">{postEntry.name}</div>
+                        <div className="posts">{postEntry.posts}</div>
                         <div><CustomButtons/></div>
+                        <hr/>
                     </div>
                     )
                 })}
             <div>
-                
+                <Posts />
+                <hr/>
             </div>
         </div>
 

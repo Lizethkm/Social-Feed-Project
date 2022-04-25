@@ -1,8 +1,24 @@
-.newPosts {
-    display: flex;
-    flex-direction: column
+input{
+    width: 400px;
+    height: 20px;
+    font-size: 12pt;
 }
 
-.container{
-    justify-content: center;
+
+textarea{
+    width: 400px;
+    height: 45px;
+    font-size: 12pt;
+    margin-left: 10px;
+}
+
+label{
+    margin-right: 10px;
+    width: 60px;
+
+}
+
+button{
+    background-color: #1867AB;
+    border-radius: 15%;
 }
