@@ -31,6 +31,7 @@ const CreatePost = (props) => {
                 <label>Post:</label>
                 <textarea name="Post" value={posts} onChange= {(event) => setPosts(event.target.value)} placeholder = "What's on your mind?"></textarea>
                 <button type="submit" >Create</button>
+                <time></time>
             </div>
             
             

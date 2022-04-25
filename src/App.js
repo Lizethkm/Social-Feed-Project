@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Posts from "./Components/PostFolder/Posts";
+import NavBar from "./Components/NavBar/NavBar";
 import DisplayPosts from "./Components/DisplayPosts/DisplayPosts";
 import CreatePost from "./Components/CreatePost/CreatePost";
 import "./Apps.css";
@@ -16,11 +16,7 @@ function App() {
 
   return (
     <div>
-    
-    <h2>
-      Social<small className="text-muted">Feed</small>
-    </h2>
-      
+      <div><NavBar/></div>
       <body>
         <div className="container">
           <div className="newPosts">
