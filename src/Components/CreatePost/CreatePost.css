@@ -3,6 +3,7 @@ input{
     height: 20px;
     font-size: 12pt;
     font-family: Segoe UI;
+    margin-bottom: 1%;
 
 }
 
@@ -19,11 +20,8 @@ textarea{
 .label{
     margin-right: 10px;
     width: 60px;
-
 }
 
-button{
-    background-color: #1867AB;
-    border-radius: 15%;
-    margin: 2px
+.postLabel{
+    float: left;
 }

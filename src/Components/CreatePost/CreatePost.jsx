@@ -28,7 +28,7 @@ const CreatePost = (props) => {
                 <input type='text' value={name} onChange= {(event) => setName(event.target.value)} placeholder="What do they call you?"></input>
             </div>
             <div>
-                <label>Post:</label>
+                <label className="postLabel">Post:</label>
                 <textarea name="Post" value={posts} onChange= {(event) => setPosts(event.target.value)} placeholder = "What's on your mind?"></textarea>
                 <button type="submit" >Create</button>
                 <time></time>

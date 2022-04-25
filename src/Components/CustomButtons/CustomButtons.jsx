@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import {FiThumbsUp} from 'react-icons/fi'
+import {FiThumbsDown} from 'react-icons/fi'
 import "./CustomButtons.css"
 
 
@@ -33,12 +35,10 @@ const CustomButtons = (props) => {
     }
 
     return ( 
-        <div className='button'>
-            <div className="rightButton">
-                <button className ={dislikeButton} type="button" onClick= {dislikeHandleClick}>Dislike</button>
-            </div>
-            <div className="leftButton">
-                <button className ={likeButton} type="button" onClick= {handleClick}>Like</button>
+        <div>
+            <div className="buttons">
+                <div className='dislikeIcon'><FiThumbsDown   className={dislikeButton} onClick={dislikeHandleClick}/></div>
+                <div className='likeIcon'><FiThumbsUp   className={likeButton} onClick={handleClick}/></div>
             </div>
         </div>
     );

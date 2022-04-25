@@ -1,23 +1,31 @@
 button{
+    background-color: blue;
+    transform: translateY(4px);
+    float:right;
+    border-radius: 15%;
+
+    margin: 2px;
+    float:right
+}
+.buttons{
+    margin: 10px;
+    background: white;
+}
+
+.likeIcon{
     float: right;
+    padding: 4px;
+
 }
 
-.leftButton{
-    margin: 10px;
+.dislikeIcon{
+    float: right;
+    padding: 4px;
 }
 
-.rightButton{
-    margin: 10px;
-}
-
-.inactive{
-
-    background-color: rgb(255, 255, 255);
-    transform: translateY(4px)
-}
 
 
 .active{
-    background-color: rgb(255, 227, 18);
+    background-color: rgb(255, 242, 65);
     transform: translateY(4px)
 }
