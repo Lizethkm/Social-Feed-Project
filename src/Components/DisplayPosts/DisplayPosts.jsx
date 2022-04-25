@@ -15,6 +15,7 @@ const DisplayPosts = (props) => {
                     <div>
                         <div className="name">{postEntry.name}</div>
                         <div className="posts">{postEntry.posts} <CustomButtons/></div>
+                        <div>{new Date().toLocaleString() + ''}</div>
                         <hr/>
                     </div>
                     )
