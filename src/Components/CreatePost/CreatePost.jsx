@@ -15,20 +15,24 @@ const CreatePost = (props) => {
         };
         console.log(newPostEntry);
         props.addNewPostEntry(newPostEntry)
+        setName('')
+        setPosts('')
     }
 
 
+
     return ( 
-        <form onSubmit= {handleCreate}>
+        <form id="form-id" onSubmit={(handleCreate)}>
             <div>
-            <label>Name:</label>
+            <label className="label">Name:</label>
                 <input type='text' value={name} onChange= {(event) => setName(event.target.value)} placeholder="What do they call you?"></input>
             </div>
             <div>
                 <label>Post:</label>
                 <textarea name="Post" value={posts} onChange= {(event) => setPosts(event.target.value)} placeholder = "What's on your mind?"></textarea>
+                <button type="submit" >Create</button>
             </div>
-            <button type="submit" >Create</button>
+            
             
         </form>
      );

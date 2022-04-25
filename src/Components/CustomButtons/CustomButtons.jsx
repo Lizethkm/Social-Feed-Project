@@ -34,15 +34,13 @@ const CustomButtons = (props) => {
 
     return ( 
         <div className='button'>
-            <div className="leftButton">
-                <button className ={likeButton} type="button" onClick= {handleClick}>Like</button>
-            </div>
             <div className="rightButton">
                 <button className ={dislikeButton} type="button" onClick= {dislikeHandleClick}>Dislike</button>
             </div>
+            <div className="leftButton">
+                <button className ={likeButton} type="button" onClick= {handleClick}>Like</button>
+            </div>
         </div>
-    
-        
     );
 } 
 

@@ -1,7 +1,9 @@
 input{
-    width: 400px;
+    width: 399px;
     height: 20px;
     font-size: 12pt;
+    font-family: Segoe UI;
+
 }
 
 
@@ -9,10 +11,11 @@ textarea{
     width: 400px;
     height: 45px;
     font-size: 12pt;
-    margin-left: 10px;
+    margin-left: 21px;
+    font-family: Segoe UI;
 }
 
-label{
+.label{
     margin-right: 10px;
     width: 60px;
 
@@ -21,4 +24,5 @@ label{
 button{
     background-color: #1867AB;
     border-radius: 15%;
+    margin: 2px
 }

@@ -14,8 +14,7 @@ const DisplayPosts = (props) => {
                     return (
                     <div>
                         <div className="name">{postEntry.name}</div>
-                        <div className="posts">{postEntry.posts}</div>
-                        <div><CustomButtons/></div>
+                        <div className="posts">{postEntry.posts} <CustomButtons/></div>
                         <hr/>
                     </div>
                     )
