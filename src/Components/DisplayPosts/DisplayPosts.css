@@ -5,3 +5,8 @@
 .posts{
     padding: 10px;
 }
+
+.timeStamp{
+    font-size: 10px;
+    font-weight: 400;
+}
